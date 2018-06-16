@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:KeepScreenOn"
+             x:Class="KeepScreenOn.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+    	<Label x:Name="ScreeLockStatus" Text="" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+		<Button x:Name="ToggleWithEssentials" Text="Turn on ScreenLock With Essentials" HorizontalOptions="Center"
+				VerticalOptions="CenterAndExpand" Clicked="ToggleWithEssentials_Clicked"/>
+		<Button x:Name="ToggleWithNativeCommand" Text="Turn on with native command" HorizontalOptions="Center"
+				VerticalOptions="CenterAndExpand" Clicked="ToggleWithNativeCommand_Clicked"/>
+	</StackLayout>
+
+</ContentPage>
